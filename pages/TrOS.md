@@ -3,6 +3,9 @@ title: "TrOS"
 author: "Karl Syvert Løland"
 layout: "default"
 ---
+
+# TrOS
+
 Some information about TrOS.
 
-Written by: {{post.author}}
+Written by: {{page.author}}

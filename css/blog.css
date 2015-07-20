@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+p.meta {
+    color: #aaa;
+}
+
 a {
     text-decoration: none;
     color: rgb(61, 146, 201);

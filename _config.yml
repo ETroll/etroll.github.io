@@ -1,13 +1,14 @@
 timezone: Europe/Oslo
-url: trollcode.no
+excerpt_separator: <!--more-->
 defaults:
-    -scope:
-        path: "projects"
-        type: "pages"
     -values:
         layout: "default"
         author: "Karl Syvert Løland"
         category: "project"
 exclude:
-- README.md
-- run.sh
+    - README.md
+    - run.sh
+footer-links:
+    github: etroll
+    twitter: etroll
+    # stackoverflow: 337544

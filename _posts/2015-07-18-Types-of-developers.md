@@ -1,13 +1,14 @@
 ---
 title: "Types of developers I have worked with or encountered"
 author: "Karl Syvert Løland"
-layout: "default"
+layout: "blogpost"
 ---
+
 
 I have worked some years as a developer and I have started to notice that many
 of the stereotypes mentioned by other developers are often very correct.
 
-
+<!--more-->
 
 ## The 8-4 / 9-5 developer
  - Does not really care about the profession, just a means to an end (paycheck)
