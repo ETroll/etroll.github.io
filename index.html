@@ -17,10 +17,11 @@ layout: default
         </p>
     </header>
 
-    <div class="post-description">
-        <p>
-            {{ post.excerpt }}
-        </p>
+    <div>
+        {{ post.excerpt }}
+    </div>
+    <div class="readlink">
+        <a href="{{ post.url }}">Read more</a>
     </div>
 </section>
 {% endfor %}

@@ -6,9 +6,11 @@
         <nav class="nav">
             <ul class="nav-list">
                 {% for page in site.pages limit: 10 %}
+                {% if page.draft == null %}
                 <li class="nav-item">
                     <a class="pure-button" href="{{ page.url }}">{{ page.title }}</a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </nav>

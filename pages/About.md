@@ -6,4 +6,4 @@ layout: "default"
 
 #About me
 
-My name is Karl Syvert Løland.
+Hi! My name is Karl Syvert Løland and I am a software developer from Norway.

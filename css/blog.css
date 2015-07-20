@@ -8,6 +8,19 @@ p.meta {
     color: #aaa;
 }
 
+blockquote {
+  padding: 0 5px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+div.readlink
+{
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+/*---*/
+
 a {
     text-decoration: none;
     color: rgb(61, 146, 201);
