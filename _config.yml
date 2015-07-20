@@ -1,0 +1,13 @@
+timezone: Europe/Oslo
+url: trollcode.no
+defaults:
+    -scope:
+        path: "projects"
+        type: "pages"
+    -values:
+        layout: "default"
+        author: "Karl Syvert Løland"
+        category: "project"
+exclude:
+- README.md
+- run.sh
