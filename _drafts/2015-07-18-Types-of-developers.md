@@ -20,9 +20,9 @@ of the stereotypes mentioned by other developers are often very correct.
  - Did not do good in school (if any)
 
 ## The unicorn
- - Designer
+ - Designer that have taken the step to learn programming.
  - JS
- - Bad dev, but thinks he/she is awesome..
+ - Normally a bad or mediocre developer, but thinks he/she is awesome..
 
 ## Enterprise
  - Care more about arciteture than resources used

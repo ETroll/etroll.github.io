@@ -1,5 +1,6 @@
 timezone: Europe/Oslo
 excerpt_separator: <!--more-->
+highlighter: "pygments"
 defaults:
     -values:
         layout: "default"
