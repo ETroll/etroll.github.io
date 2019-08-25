@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Trollcode.no - A personal blog</title>
-    <link>https://trollcode.no/tags/</link>
+    <link>//www.trollcode.no/tags/</link>
     <description>Recent content in Tags on Trollcode.no - A personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Aug 2015 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://trollcode.no/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//www.trollcode.no/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C</title>
-      <link>https://trollcode.no/tags/c/</link>
+      <link>//www.trollcode.no/tags/c/</link>
       <pubDate>Sat, 01 Aug 2015 00:00:00 +0100</pubDate>
       
-      <guid>https://trollcode.no/tags/c/</guid>
+      <guid>//www.trollcode.no/tags/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CMOS</title>
-      <link>https://trollcode.no/tags/cmos/</link>
+      <link>//www.trollcode.no/tags/cmos/</link>
       <pubDate>Sat, 01 Aug 2015 00:00:00 +0100</pubDate>
       
-      <guid>https://trollcode.no/tags/cmos/</guid>
+      <guid>//www.trollcode.no/tags/cmos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OSDEV</title>
-      <link>https://trollcode.no/tags/osdev/</link>
+      <link>//www.trollcode.no/tags/osdev/</link>
       <pubDate>Sat, 01 Aug 2015 00:00:00 +0100</pubDate>
       
-      <guid>https://trollcode.no/tags/osdev/</guid>
+      <guid>//www.trollcode.no/tags/osdev/</guid>
       <description></description>
     </item>
     

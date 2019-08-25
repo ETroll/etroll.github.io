@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Trollcode.no - A personal blog</title>
-    <link>https://trollcode.no/blog/</link>
+    <link>//www.trollcode.no/blog/</link>
     <description>Recent content in Blog on Trollcode.no - A personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0100</lastBuildDate>
     
-	<atom:link href="https://trollcode.no/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//www.trollcode.no/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Going serverless with Microsoft Azure</title>
-      <link>https://trollcode.no/blog/2019-04-03-going-serverless-azure/</link>
+      <link>//www.trollcode.no/blog/2019-04-03-going-serverless-azure/</link>
       <pubDate>Wed, 03 Apr 2019 00:00:00 +0100</pubDate>
       
-      <guid>https://trollcode.no/blog/2019-04-03-going-serverless-azure/</guid>
+      <guid>//www.trollcode.no/blog/2019-04-03-going-serverless-azure/</guid>
       <description>This article have been posted on my employers official blog at an earlier time. They are the same. My post on my employers website can be found here: Webstep - Going serverless with Microsoft Azure The term “serverless” is something that we hear more and more about. It is mentioned often as the next big thing in cloud computing. There might be a small confusion on to what serverless really is, and it does not help that the cloud providers often “serverless-wash” their existing services.</description>
     </item>
     
     <item>
       <title>Detecting floppy disk drives using CMOS</title>
-      <link>https://trollcode.no/blog/2015-08-01-detecting-floppy-disk/</link>
+      <link>//www.trollcode.no/blog/2015-08-01-detecting-floppy-disk/</link>
       <pubDate>Sat, 01 Aug 2015 00:00:00 +0100</pubDate>
       
-      <guid>https://trollcode.no/blog/2015-08-01-detecting-floppy-disk/</guid>
+      <guid>//www.trollcode.no/blog/2015-08-01-detecting-floppy-disk/</guid>
       <description>As a hobby project I am working on a small OS project for i386 (and ARM). Recently I was writing a driver for floppy disk drives and I stumbled on to a issue that I needed to find a solution for.
 The issue was how to detect if any or how many floppy disk drives are present on a given system. I quick google informed me that the CMOS was normally used for this and the page provided some getting started information on how to detect floppy disk drives.</description>
     </item>
