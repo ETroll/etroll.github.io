@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSDEV on Trollcode.no - A personal blog</title>
+    <link>https://trollcode.no/tags/osdev/</link>
+    <description>Recent content in OSDEV on Trollcode.no - A personal blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Aug 2015 00:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="https://trollcode.no/tags/osdev/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Detecting floppy disk drives using CMOS</title>
+      <link>https://trollcode.no/blog/2015-08-01-detecting-floppy-disk/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0100</pubDate>
+      
+      <guid>https://trollcode.no/blog/2015-08-01-detecting-floppy-disk/</guid>
+      <description>As a hobby project I am working on a small OS project for i386 (and ARM). Recently I was writing a driver for floppy disk drives and I stumbled on to a issue that I needed to find a solution for.
+The issue was how to detect if any or how many floppy disk drives are present on a given system. I quick google informed me that the CMOS was normally used for this and the page provided some getting started information on how to detect floppy disk drives.</description>
+    </item>
+    
+  </channel>
+</rss>

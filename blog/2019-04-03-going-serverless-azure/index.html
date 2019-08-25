@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html><head>
+        <title>
+            
+                Trollcode.no - A personal blog
+            
+        </title>
+
+    
+    
+
+    <link rel="stylesheet" href="https://trollcode.no/sass/main.css">
+</head><body><menu>
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        
+        <li>
+            <a href="https://trollcode.no/blog/">Blog</a>
+        </li>
+        
+        <li>
+            <a href="https://trollcode.no/talk/">Talks</a>
+        </li>
+        
+        <li>
+            <a href="https://trollcode.no/about/">About me</a>
+        </li>
+        
+        <li>
+            
+                <a href="http://github.com/etroll">
+                
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+            
+                <a href="https://www.linkedin.com/in/karlsyvertloland/">
+                
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn icon</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+            
+                <a href="https://stackoverflow.com/users/337544/etroll">
+                
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Stack Overflow icon</title><path d="M18.986 21.865v-6.404h2.134V24H1.844v-8.539h2.13v6.404h15.012zM6.111 19.731H16.85v-2.137H6.111v2.137zm.259-4.852l10.48 2.189.451-2.07-10.478-2.187-.453 2.068zm1.359-5.056l9.705 4.53.903-1.95-9.706-4.53-.902 1.936v.014zm2.715-4.785l8.217 6.855 1.359-1.62-8.216-6.853-1.35 1.617-.01.001zM15.751 0l-1.746 1.294 6.405 8.604 1.746-1.294L15.749 0h.002z"/></svg>
+                </a>
+            
+                <a href="https://www.twitch.tv/karlonazure">
+                
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitch icon</title><path d="M2.089 0L.525 4.175v16.694h5.736V24h3.132l3.127-3.132h4.695l6.26-6.258V0H2.089zm2.086 2.085H21.39v11.479l-3.652 3.652H12l-3.127 3.127v-3.127H4.175V2.085zM9.915 12.522H12v-6.26H9.915v6.26zm5.735 0h2.086v-6.26H15.65v6.26z"/></svg>
+                </a>
+            
+                <a href="https://twitter.com/etroll">
+                
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/></svg>
+                </a>
+            
+        </li>
+    </ul>
+
+</menu>
+<div id="content">
+<div>
+  <h1 class="blogpost">Going serverless with Microsoft Azure</h1>
+  
+  <h4 class="blogpost">April 4, 2019</h4>
+  <span class="readingtime">Estimated reading time: 20 minutes</span>
+  
+  
+    <p class="oldpost">
+      This post was published some time ago. 
+      The world of technology is rapidly evolving, 
+      and in some extreme cases even posts just one month old will be out-dated.
+      So there is a chance that some of the concepts, technology or pricing in this post is no longer applicable.
+    </p>
+  
+
+  
+
+<p><p class="prevposted">
+This article have been posted on my employers official 
+blog at an earlier time. They are the same. 
+My post on my employers website can be found here: 
+<a href ="https://www.webstep.no/2019/04/03/going-serverless-microsoft-azure/">Webstep - Going serverless with Microsoft Azure</a>  
+</p>
+The term “serverless” is something that we hear more and more about. It is mentioned often as the next big thing in cloud computing. There might be a small confusion on to what serverless really is, and it does not help that the cloud providers often “serverless-wash” their existing services. But serverless might not be some ground-breaking new concept. But rather an evolution of services provided by cloud providers for some time. Let’s have a look at what serverless is and what Microsoft Azure can provide in terms of serverless services.</p>
+
+<h2 id="what-is-serverless">What is serverless?</h2>
+
+<div class="blog-factbox">
+    <div>
+        
+        <div class="blog-factbox-header">
+            FaaS
+        </div>
+        
+        <p>
+            
+“FaaS”, or Functions-as-a-Service, is a common serverless offer from cloud providers where you as a developer supply the code in form of a single function that should be executed when certain conditions are met. Those conditions could be a invocation of the functions public HTTP endpoint, a message on a bus or a timer to mention some.
+
+        </p>
+    </div>
+</div>
+
+<p>The term “serverless” can be, as many other buzzword-terms often are, an ambiguous one. It is not true that there are no servers as the term might imply. There is of course a server somewhere running your application. The term “serverless” rather refers to the case that you as a developer (or DevOps) do not need to think about the server(s) that are running your application(s). There is no need to think about keeping a server updated with the latest patches, scaling or anything else in relation to the infrastructure and hosting of the infrastructure.</p>
+
+<p>It is a term that is often associated to Function-as-a-Service (“FaaS”) services. FaaS is just on form of serverless services that cloud providers offers. (In this article we will go into details about Microsoft Azure’s FaaS offering – Azure Functions.) Serverless also applies to services as data storage, messaging, compute and other service offerings where you do not need to manage own infrastructure. This responsibility is outsourced to a cloud provider that offers serverless services, like Microsoft Azure, Amazon Web Services or Google Cloud.</p>
+
+
+
+<figure >
+    
+        <img src="Figure1-Abstracted-Infrastructure.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 1: Serverless sits on top of abstracted infrastructure.</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>A cloud service can be thought of as serverless when you as a developer supply the application. And your provider takes care of the rest in regards of infrastructure needs like scaling, networking or security. This is sometimes referred to as: “BaaS” – Backend-as-a-Service. A common definition is that a service is truly serverless when the following conditions are met:</p>
+
+<ul>
+<li>Abstraction of servers</li>
+<li>Scales automatically and instantly</li>
+<li>Only billed for actual usage</li>
+</ul>
+
+<p>As illustrated in Figure 1: In addition to the abstraction of servers, you only pay for what you use. (Micro billing) The service is not billed on an hour / minute basis even if you do not use it during that hour or minute. It scales automatically to the need of your application. So, if you have unevenly usage of your application the infrastructure beneath scales up and down accordingly.</p>
+
+
+
+<figure >
+    
+        <img src="Figure2-Evolution-of-the-cloud.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 2: Serverless - an evolution of the cloud</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>Serverless can be regarded as an evolution of the cloud. The first cloud services were Infrastructure-as-a-Service, (IaaS) where you could provision infrastructure serices virtual machines, load balancers, networks, storage and other on the cloud provider. You still had to maintain your servers with latest patches to the operating system and set up internal networking and scaling yourself.</p>
+
+<div class="blog-factbox">
+    <div>
+        
+        <div class="blog-factbox-header">
+            IaaS and PaaS
+        </div>
+        
+        <p>
+            
+IaaS – Infrastructure-as-a-Service is when a cloud provider hosts infrastructure component like servers, storage and networking and enables the user to provision the services on demand.
+<br/><br/>
+PaaS – Platform-as-a-Service is services where the underlying infrastructure is abstracted away and the cloud provider supplies the customer with a framework they can use to develop services on top of.
+
+        </p>
+    </div>
+</div>
+
+<p>Cloud providers then started offering Platform-as-a-Service (PaaS) services where the servers were abstracted away, but you still had to scale the service yourself and you payed by the hour/minute/second even if you did not use the service. To help with these manual tasks many created scripts themselves that: Automatically scaled a service up or down based load and provisioned / deprovisioned services when needed.</p>
+
+<p>With serverless the cloud provider has removed the need to automate the scaling and provisioning of underlying infrastructure. The provider now does this for you. And you only pay for the seconds that the serverless service is in use.</p>
+
+<h2 id="the-microsoft-azure-serverless-platform">The Microsoft Azure serverless platform</h2>
+
+
+
+<img 
+    class="blog-paragraph" 
+    src="Icon1-Azure-300x224.png" 
+    style="width: 12%;height: 12%;"/>
+
+
+<p>Microsoft Azure have many serverless services that they provide. They are grouped into two categories: “Serverless execution environments” and “Fully managed services”. The serverless execution environments are services that are used to run your code. Fully managed services are services that can easily be integrated with your code to create powerful and scalable serverless applications.</p>
+
+<p>Serverless execution environments are services like Azure Functions, Azure Service Fabric Mesh and Azure Container Instances. Azure Functions are the Azure FaaS service and Azure Container Instances (ACI) are a serverless solution where you can run your containers on a cluster. All though ACI does not at the time of writing fulfill one of the 3 criteria given above, it is still counted as one of Microsoft Azure serverless offerings. Azure Service Fabric Mesh are serverless solutions where you can run your Service Fabric applications and containers (Windows and Linux) on an Azure Service Fabric cluster.</p>
+
+
+
+<figure >
+    
+        <img src="Figure3-Azure-serverless-services-1500x453.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 3: Microsoft Azure serverless services.</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>The fully managed services are services like Cosmos DB, Azure Service Bus, Logic Apps and Event Grid to mention some. They are services that provides serverless storage, messaging, orchestration and events to your serverless applications.
+Both the fully managed services and the serverless execution environments are often only billed by usage and is automatically scaled to fit your needs.</p>
+
+<p>Both the serverless execution environments and the fully managed services are seamlessly integrated with development tools like Visual Studio and Azure DevOps for easy development and deployment. With this basic overview of the Azure serverless platform lets move on to some more details about some of the services.</p>
+
+<h2 id="azure-functions">Azure Functions</h2>
+
+
+
+<img 
+    class="blog-paragraph" 
+    src="Icon2-Azure-Functions.png" 
+    style="width: 12%;height: 12%;"/>
+
+
+<p>Azure Functions are the Functions-as-a-Service offering from Microsoft Azure. As with other FaaS solutions it is designed to execute small short-lived functions. It has a default maximum lifetime of 5 minutes and can be configured to be as small as 1 second and at most 10 minutes. If the function execution time exceeds the configured (or default) lifetime it will be un-gracefully killed. An Azure Function should do one thing and do that thing good. You can combine many functions together using an orchestrator like Logic Apps or create a durable function. (A durable function is a special stateful Azure Function)</p>
+
+<h3 id="use-cases">Use cases</h3>
+
+<p>Some Azure Functions use cases could be:</p>
+
+<ul>
+<li>Processing event streams in real time</li>
+<li>Processing files</li>
+<li>Web APIs and mobile backends</li>
+<li>Automate scaling / (de)provisioning of other Azure services</li>
+<li>A glue between different Azure services</li>
+<li>A service processing events or messages on a service bus</li>
+</ul>
+
+<h3 id="triggers-and-bindings">Triggers and Bindings</h3>
+
+<p>A Trigger, as the name might imply, is an event that start the Azure Function. There are several triggers to choose from. Some of the most common ones might be: Webhook, Service Bus, Event Grid or Cosmos DB.</p>
+
+<p>Bindings are a construct inside of an Azure Function that enables you to communicate with other services (Azure or external) without any need to use an SDK or library. This makes for a very small and easy implementation when you as a developer want to send a SMS, store data on a Storage Blob or send a message on Azure Service Bus. Bindings can work as inputs or outputs to a function, but only a subset of all the available bindings can be used as inputs.</p>
+
+<p>The bindings (both input and output) are passed to the Azure Function as a parameter when the function is executed. The trigger is also passed to the function as a parameter. The direction of the binding is configured ether in the Azure Portal UI for the Function or in the configuration file deployed with you function code.</p>
+
+
+
+<figure >
+    
+        <img src="Figure4-Triggers-and-bindings-1024x498.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 4: Triggers and bindings options for Azure Functions</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>There are many different Triggers and Binding to choose from. Over is a figure that illustrates all the current available triggers and bindings as of writing. (The SignalR binding are in public preview and not generally available.)</p>
+
+<h3 id="durable-functions">Durable Functions</h3>
+
+<p>A recent addition to Azure Functions is the Durable Functions. A Durable Function is an extension of the normal Azure Functions. The extension is built upon the Durable Task Framework. This is a framework for writing long running persistent workflows.</p>
+
+<p>Durable Functions maintains the execution state by using the event sourcing pattern on top of Azure Storage Account to create a append-only store. This enables the function to never loose state even if the process is recycled or the VM rebooted.</p>
+
+
+
+<figure >
+    
+        <img src="Figure5.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 5: The tree durable function types in Azure Functions</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>There are three types of Durable Functions: Client, Orchestrator and Activity. And one of the main use cases of Durable Functions are as an orchestrator of other Durable Functions.</p>
+
+<p>The client functions are the entry points that are triggered and creates new instances of an orchestration function. The orchestration functions execute activity functions or can also execute new orchestration functions. The activity functions are there the tasks and actions are performed and can return values back to the orchestrator functions for persistence.</p>
+
+<h3 id="azure-functions-runtime">Azure Functions Runtime</h3>
+
+<p>Azure Functions run on the Azure Function Runtime. There are currently two versions of the Azure Functions Runtime: 1.x and 2.x. The 1.x runtime only supports development and hosting in the Azure portal or on Windows computers. But the 2.x runtime supports developing running on developing on Linux, Mac OSX and Windows. One of the biggest difference between 1.x and 2.x is that 1.x uses .NET Framework and 2.x uses .NET Core.</p>
+
+<p>There are also some differences in what languages that are supported. All languages that are considered “experimental” in 1.x are not supported in 2.x.  There are also other minor differences and they can be found in more details here on the Azure Functions documentation.</p>
+
+<h3 id="programming-languages-supported">Programming languages supported</h3>
+
+<p>Many programming languages can be used with Azure Functions. There are some differences in what languages are supported based upon the runtime used. Beneath is a list of the supported programming languages at the time of writing:</p>
+
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th align="center">1.x</th>
+<th>2.x</th>
+<th>Notes</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>C#</td>
+<td align="center">Yes</td>
+<td>Yes</td>
+<td>.NET Framework 4.7 is used in 1.x and .NET Core 2 in 2.x</td>
+</tr>
+
+<tr>
+<td>Javascript</td>
+<td align="center">Yes</td>
+<td>Yes</td>
+<td>Node 6 support in 1.x and Node 8 &amp; 10 in 2.x</td>
+</tr>
+
+<tr>
+<td>F#</td>
+<td align="center">Yes</td>
+<td>Yes</td>
+<td>.NET Framework 4.7 is used in 1.x and .NET Core 2 in 2.x</td>
+</tr>
+
+<tr>
+<td>Java</td>
+<td align="center"></td>
+<td>Yes</td>
+<td>Java 8</td>
+</tr>
+
+<tr>
+<td>Python</td>
+<td align="center">Exp.</td>
+<td>Yes</td>
+<td>Pyblic preview - Python 3.6</td>
+</tr>
+
+<tr>
+<td>Typescript</td>
+<td align="center">Exp.</td>
+<td></td>
+<td>Supported trough transpiling to Javascript</td>
+</tr>
+
+<tr>
+<td>PHP</td>
+<td align="center">Exp.</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Batch</td>
+<td align="center">Exp.</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Bash</td>
+<td align="center">Exp.</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Powershell</td>
+<td align="center">Exp.</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Languages that are marked Exp. Are experimental languages. These experimental languages only run on 1.x and does not support all bindings and scale very well.</p>
+
+<h3 id="running-an-azure-function">Running an Azure Function</h3>
+
+<p>One of the many great things about Azure Functions is its versatility on where you can run your function code. You can run an Azure Function on many locations. From Microsoft Azure to on-premises using the Azure Functions Runtime or Azure Stack. Some of the latest ways of running a function is in a container. This enables a function to be run virtually anywhere you can run a container. Note that at the time of writing the Azure Functions Runtime, (and by effect Containers) and Azure Function Modules on IoT Edge are in public preview and not generally available.</p>
+
+
+
+<figure >
+    
+        <img src="Figure6-Function-runtimes-1024x231.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 6: Where you can run Azure Functions today</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<h3 id="pricing-models">Pricing models</h3>
+
+<p>For some pricing may be the boring part when describing a cloud service. But for Azure Functions pricing can be one of its stronger selling points. When running Azure Functions on Azure you can choose between a fixed price by using an App Service Plan or a Consumption plan. The App Service plan offer predictable prices, but you lose most of the advantages of Azure Functions as a serverless service since your resources are now limited and it does not scale automatically. But you do gain the possibility to let your function access your VNETs.</p>
+
+<div class="blog-factbox">
+    <div>
+        
+        <div class="blog-factbox-header">
+            VNET
+        </div>
+        
+        <p>
+            
+VNET is a type of Infrastructure-as-a-Service service offered by Microsoft Azure. It enables you to create a virtual network to connect your virtual appliances, virtual machines and other IaaS services offered by Microsoft Azure.
+
+        </p>
+    </div>
+</div>
+
+<p>The recommended pricing model to choose if you can, is the “consumption” pricing model. Using this pricing model, you only pay for the execution time of your function in addition to a price per execution. The price for execution time is measured in GB-s. This is amount of gigabyte RAM per second used.</p>
+
+<p>Included in the consumption pricing model is a free tier of 400 000 GB-s and 1 million executions at the time of writing. For an overview of the latest prices for Azure Functions you can visit the Microsoft Azure Functions pricing page <a href="https://azure.microsoft.com/en-us/pricing/details/functions/">here</a>.</p>
+
+<p>You can also run Azure Functions without any additional charge by running them on your IoT Edge device or using the runtime with or without a container on your own infrastructure.</p>
+
+<h2 id="azure-logic-apps">Azure Logic Apps</h2>
+
+
+
+<img 
+    class="blog-paragraph" 
+    src="Icon3-Azure-Logic-Apps-300x300.png" 
+    style="width: 12%;height: 12%;"/>
+
+
+<p>Azure Logic Apps are an Azure service that is used for orchestration and automation of tasks. It can integrate with approx. 200 different services, both external and Microsoft Azure, at the time of writing. It is a visual tool that uses a visual designer in the Azure Portal UI or Visual Studio and there is a many quick start templates to choose from in the logic apps template gallery. Every workflow is saved as a json file, so if you should find the need to have a look under the hood you can.</p>
+
+<p>It can be a familiar service to use for someone familiar to IFTTT (If-This-Then-That), Nintex or similar tools to create a workflow. No code is required to create an Azure Logic Apps workflow.</p>
+
+
+
+<figure >
+    
+        <img src="Figure7-Logic-App-Template.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 7: Screenshot of one of the starter templates from the Azure Portal illustrating the IFTTT-like user interface</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<h3 id="use-cases-1">Use cases</h3>
+
+<p>There are a many use cases for Azure Logic Apps because of its versatility. You can use it to orchestrate Azure Functions, act as a simple web service (using the request and response connector) or to help you connect legacy on-premise systems with newer systems in the cloud to help you move toward digitalization.</p>
+
+<p>Some of the more common use cases would be:</p>
+
+<ul>
+<li>Orchestration of Azure Functions</li>
+<li>Automating business processes</li>
+<li>Integrating older legacy systems with the cloud</li>
+<li>Validate or transform data</li>
+<li>Route messages on a service bus</li>
+</ul>
+
+<p>Using Azure Logic Apps, you can create workflows containing simple logic using conditional statements, branches and loops. But if you need more advanced logic in your workflow then you can combine Azure Logic Apps with Azure Functions to enhance its capabilities even more.</p>
+
+<h3 id="connectors">Connectors</h3>
+
+<p>One of the core functionalities that enables you to create workflows are connectors. A connector is way for Azure Logic Apps to connect to services and gain quick access to events, data or actions provided by the service.</p>
+
+<p>At the time of writing there are around 200 connectors to choose from and the list are steadily growing. If there are no pre-built connector from Microsoft or other 3rd parties already in place, then you can create your own custom connector.</p>
+
+<h3 id="triggers-and-actions">Triggers and Actions</h3>
+
+<p>Many connectors have functionality that enables them to be used as a trigger to start a Azure Logic Apps workflow. These connectors send an event when certain conditions are met and a new instance of the Azure Logic App workflow that listens to that trigger are instantiated.</p>
+
+<p>There are mainly three different types of triggers available. This is:</p>
+
+<ul>
+<li>Polling trigger</li>
+<li>Push trigger</li>
+<li>Recurrence trigger</li>
+</ul>
+
+<p>The polling trigger polls a service at given intervals and triggers if certain pre-defined conditions are met.  The push trigger listens for events and triggers if an event is received. The recurrence trigger is a timer that triggers at a recurrent user-defined interval.</p>
+
+<p>Another connector feature is actions. Actions are tasks that can be executed on a service using a connector. Actions are tasks that are defined as steps and automated by your Azure Logic Apps. It is worth noting that not all actions are connector actions. There are integrated actions like conditional actions and data manipulation actions that are not a connector to an external service.</p>
+
+<h3 id="pricing-models-1">Pricing models</h3>
+
+<p>Two pricing models are used by Azure Logic Apps. The main pricing model are the consumption model where you pay for the number of actions and connectors that are executed in your workflows. The connectors are categorized into standard and enterprise where the enterprise connector execution cost is approx. 8x more than the price for the standard connector execution. At the time of writing the price for a standard connector execution is NOK 0.001015 and the price for a action is NOK 0.000203. Note that these quotes are subject to change.</p>
+
+<p>The other pricing model is the fixed pricing where you pay for a dedicated environment. This enables your Azure Logic Apps to connect to services located on VNETs and/or Virtual Machines connected to those VNETs. This pricing model is at the time of writing in public preview and are discounted 50%. This is subject to change when it becomes generally available. Your dedicated environment are billed per hour it stays on and has a limit to 1k actions/connectors executions per minute. If you want to increase this limit you pay can extend it by ordering more units.</p>
+
+<h2 id="azure-event-grid">Azure Event Grid</h2>
+
+
+
+<img 
+    class="blog-paragraph" 
+    src="Icon4-Azure-Event-Grid.png" 
+    style="width: 12%;height: 12%;"/>
+
+
+<p>Azure Event Grid is a event distribution service designed for Microsoft Azure. Azure Event Grid is connected to a growing list of services on Microsoft Azure and enables you to react to events in near-real time fashion. Azure Event Grid also supports custom events, so it is not just for use with events from Microsoft Azure. You can push events using your favorite HTTP client or library.</p>
+
+<p>Azure Event Grid uses the pub-sub (publish-subscribe) model. Event sources (Azure services or your own custom) publishes events to a topic that Azure Event Grid then pushes to the subscribers of the topic. This enables you as a developer to create event driven service architectures with decoupled services with ease.</p>
+
+<p>Using the “push-push” method distinguishes Azure Event Grid from other Microsoft Azure evening and messaging services. Both Azure Storage Queues and Azure Service Bus uses the “push-pull” method there the subscribers of a topic must regularly poll to see of the topic has any new events or messages. Using “push-push” is what enables Azure Event Grid to deliver near real time events across services.</p>
+
+
+
+<figure >
+    
+        <img src="Figure8-Event-Grid-sources-and-topics.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 8: How Event Sources, Topics, Event Subscriptions and Event Handler are connected.</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<h3 id="event-sources-and-event-handlers">Event Sources and Event Handlers</h3>
+
+<p>In Azure Event Grid the concept of event sources and event handlers are used for the publishers and the subscribers of events. An event source publishes an event to a topic, and an event handler subscribes to an event on a topic. A topic can be a built-in topic for an Event Grid enabled Azure service or a custom topic defined by the user where custom events can be pushed by HTTP.</p>
+
+<p>At the time of writing there are 10 Azure services (+ custom) that support sending events to Azure Event Grid. There are 8 Azure services that have capabilities as an event handler. This includes Azure Functions and Azure Logic Apps. This list is growing. The above image has 7 services supporting sending events and it is just a few months old.</p>
+
+<h3 id="pricing-model">Pricing Model</h3>
+
+<p>Azure Event Grid is priced by consumption only. You pay per “operation”. An operation is ether a ingress of event to a topic or event domain, advanced matches, delivery attempts and management calls.  (I have not mentioned event domains in this article, but if you are interested in knowing more about event domains in Azure Event Grid then you can follow <a href="https://docs.microsoft.com/en-us/azure/event-grid/event-domains">this link</a>.)</p>
+
+<p>There is a “free-tier” like most of the other services described in this article. The free-tier includes 100 000 operations. The price after that are NOK 4,87 per 1 million operations. (At the time of writing.)</p>
+
+<h2 id="azure-container-instances">Azure Container Instances</h2>
+
+
+
+<img 
+    class="blog-paragraph" 
+    src="Icon5-Azure-Container-Instances.png" 
+    style="width: 12%;height: 12%;"/>
+
+
+<p>Although Azure Container Instances does not fulfill all 3 definitions for a serverless service that we set in the start, (it does not auto-scale,) it deserves an honorable mention. Azure Container Instances is a way for you to run your containers on Microsoft Azure without needing to run or maintain any infrastructure.</p>
+
+<p>Azure Container Instances enables you to quickly run your container and exposes it to the internet with a public IP and a custom DNS name. You can mount Azure File Shares (A part of the Azure Storage Account service) to create a persistent storage for your containers.</p>
+
+<p>Both Linux and Windows containers are supported, and you can connect your containers to Azure VNets. You can also access one ore more NVIDIA Tesla GPUs for your deep learning applications.</p>
+
+<h3 id="use-cases-2">Use Cases</h3>
+
+<p>Some use cases for Azure Container Instances are containers with a short to medium life-span. This could be batch jobs, calculations, training deep neural networks or as a build agent.</p>
+
+<h3 id="pricing-model-1">Pricing Model</h3>
+
+<p>Unlike the other Microsoft Azure services mentioned previously, Azure Container Instances does not have a free-tier. You are billed per second for the resources allocated to your container. You pay per GB-s memory, vCPU-s and vGPU-s allocated to your container. An extra charge is also added per vCPU-s used when running Windows containers.</p>
+
+<p>This might seem like much. But the prices per vCPU-s, GB-s and vGPU-s are very small. At the time of writing the prices were:</p>
+
+<ul>
+<li>NOK 0.0000116 per GB-s</li>
+<li>NOK 0.0001051 per vCPU-s</li>
+<li>NOK 0.001055 – 0.00836 per vGPU-s</li>
+</ul>
+
+<p>So, if you do not run a container 24 hours a day, then it is cheaper than the other container hosting solutions provided by Microsoft Azure.</p>
+
+<h2 id="how-does-all-tie-together">How does all tie together?</h2>
+
+<p>Using all the serverless execution environments and fully managed services provided by Microsoft Azure you can create powerful and scalable serverless solutions. And at a price that scales with the usage of your solution. The services mentioned in this article complements each other. Create a backend using Azure Functions and orchestrate it using Azure Logic Apps or Azure Durable Functions. Then you can keep you’re your backend decoupled using Azure Event Grid. You can also create functions or logic apps that acts on events from other Microsoft Azure services like Azure Storage Account, Azure Cosmos DB, Azure IoT Hub as well as your own custom events. This can for example be used to scale up/down or create/remove extra services on Microsoft Azure based on events. It results in a very flexible and scalable solution.</p>
+
+
+
+<figure >
+    
+        <img src="Figure9-Example-achitecture-1024x711.png"  />
+    
+    
+    <figcaption>
+        <h4>Figure 9: Example architecture of a serverless trading application</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<p>Above is an architecture diagram over an example securities trading application created using serverless and fully manages services from Microsoft Azure. Using these services, the application is only billed when it is used by a user/customer or data is scheduled to be fetched. This makes for a very cheap hosting solution for the application.</p>
+
+<p>The application consists of a data ingestion layer consisting of containers running on a schedule using Azure Container Instances. An Azure Logic App is used to schedule the “exchange client” container when the exchange opens and stop the container from running when the exchange closes. It also schedules the “crawler” containers to get end-of-day valuations and quarterly financial statements.
+The “exchange client” sends events to Azure Event Grid topics when prices reaches certain levels or other criteria set in the Admin UI. A set of Azure Functions subscribes to these topics and sends the user messages (with possible callback functionality) via a Telegram bot.</p>
+
+<p>Data is stored in an Azure Storage Account. Both storage blobs and table storage are used. This is a very inexpensive way to store large amounts of data and can be easily read from other services on Microsoft Azure. (Services like Azure Cosmos DB or Azure SQL could also have been used in combination to the blob storage, but for this example I did not choose them.)</p>
+
+<p>The frontend of the application consists of Azure Functions used by a SPA (Single-Page-Application) hosted on an Azure Blob Storage as static files. This web application uses the Azure Functions trough Azure API Management and is secured using Azure AD. Azure API Management works as a gateway and developer portal with documentation on top of the Azure Functions and enables easy access control on top of our APIs. More on Azure API Management can be found <a href="https://docs.microsoft.com/en-us/azure/api-management/">here</a>.</p>
+
+<h2 id="where-to-get-started">Where to get started</h2>
+
+<p>There are many resources to get you get started creating your own serverless solution on Microsoft Azure. In this article we have had a look at some of the serverless services provided, but we have not had a deep dive into how you as a developer can start creating your own. Microsoft have extensive documentation on how to start developing using all these good services.</p>
+
+<p>Following are some links to point you in the right direction:</p>
+
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/">https://docs.microsoft.com/en-us/azure/azure-functions/</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview">https://docs.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-overview</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/logic-apps/">https://docs.microsoft.com/en-us/azure/logic-apps/</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/event-grid/">https://docs.microsoft.com/en-us/azure/event-grid/</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/functions/tutorial-static-website-serverless-api-with-database">https://docs.microsoft.com/en-us/azure/functions/tutorial-static-website-serverless-api-with-database</a></li>
+</ul>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<p>A big thank you to Anders Høibakk for valuable feedback while writing this article!</p>
+
+</div>
+
+
+        </div><footer>
+    <div>
+        &copy; 2014 - 2019 Karl Syvert Løland - All Rights Reserved
+    </div>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+menu {
+  width: 100%;
+  min-height: 80px;
+  background-color: #376f9e;
+  background-image: url("/img/Profile.png");
+  background-size: 76px 90%;
+  background-repeat: no-repeat;
+  background-position: left center; }
+  menu > img {
+    max-height: 70px;
+    padding: 5px; }
+  menu ul {
+    min-height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch; }
+    menu ul > li {
+      display: flex;
+      align-items: center; }
+      menu ul > li > a {
+        padding: 1rem; }
+        menu ul > li > a:visited, menu ul > li > a:hover, menu ul > li > a:active, menu ul > li > a:link {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 1.6rem; }
+      menu ul > li:last-child {
+        margin-left: 5rem; }
+        menu ul > li:last-child a {
+          padding: 0.6rem; }
+        menu ul > li:last-child svg {
+          min-height: 32px;
+          min-width: 32px;
+          max-height: 32px;
+          max-width: 32px; }
+          menu ul > li:last-child svg path {
+            stroke: #ffffff;
+            fill: #ffffff; }
+        menu ul > li:last-child:hover {
+          background-color: #376f9e; }
+      menu ul > li:hover {
+        background-color: #5794c7; }
+
+footer {
+  width: 100%;
+  min-height: 40px;
+  background-color: #376f9e;
+  margin-bottom: 2rem;
+  margin-top: 2rem; }
+  footer div {
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: #ffffff; }
+
+body {
+  font-family: -apple-system, 'Segoe UI Semilight', Helvetica, Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #6b5e5e;
+  line-height: 1.5; }
+
+img.blog-paragraph {
+  float: left;
+  padding-right: 6px;
+  margin-top: 1rem; }
+
+section.last-10-posts-header {
+  font-size: 1.4rem;
+  margin-top: 3rem; }
+
+section > article {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem; }
+
+div#content {
+  margin: 1rem;
+  margin-left: 2rem; }
+  div#content p {
+    max-width: 800px; }
+    div#content p.oldpost {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-left: 5px solid #376f9e; }
+    div#content p.prevposted {
+      background-color: #f0f0f0;
+      padding: 1rem;
+      border-left: 5px solid orange; }
+  div#content blockquote {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+    position: relative; }
+    div#content blockquote p {
+      display: inline; }
+      div#content blockquote p:before {
+        position: absolute;
+        content: open-quote;
+        font-size: 4em;
+        margin-left: -0.3em;
+        margin-top: -0.2em; }
+      div#content blockquote p:after {
+        position: absolute;
+        content: close-quote;
+        font-size: 4em;
+        bottom: 0;
+        right: 0;
+        margin-bottom: -0.6em; }
+  div#content div {
+    max-width: 800px; }
+    div#content div.blog-factbox {
+      width: 200px;
+      padding: 0.4rem;
+      background-color: #376f9e;
+      color: #ffffff;
+      float: right;
+      margin: 0.4rem; }
+      div#content div.blog-factbox div.blog-factbox-header {
+        color: #313131;
+        background-color: #ffffff;
+        text-align: center;
+        margin-bottom: 1rem;
+        margin-left: -13px;
+        width: 209px;
+        padding: 0.4rem;
+        border: 2px solid #376f9e; }
+      div#content div.blog-factbox p {
+        font-size: 0.86rem; }
+    div#content div img, div#content div figure {
+      width: 100%; }
+    div#content div figure {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0; }
+  div#content h1.blogpost {
+    margin-bottom: 0; }
+  div#content h2 {
+    font-size: 1.6rem;
+    color: #313131;
+    margin-bottom: 0.2rem; }
+  div#content h3 {
+    color: #777777;
+    margin-top: 0;
+    margin-bottom: 1rem; }
+  div#content h4 {
+    color: #777777;
+    font-size: 0.76rem;
+    margin-top: 0.4rem; }
+    div#content h4.blogpost {
+      margin-bottom: 1rem; }
+  div#content span.readingtime {
+    color: #777777;
+    font-size: 0.76rem;
+    margin-bottom: 1rem; }
+  div#content article {
+    margin-bottom: 2rem; }
+    div#content article div {
+      max-width: 800px; }
+      div#content article div hr {
+        border: 2px dotted #777777;
+        border-style: none none dotted; }
+      div#content article div a:visited, div#content article div a:hover, div#content article div a:active, div#content article div a:link {
+        text-decoration: none;
+        color: #313131; }
+      div#content article div span {
+        font-style: italic; }
+      div#content article div:last-child {
+        margin-top: 1rem; }
+  div#content table {
+    border-collapse: collapse;
+    margin-bottom: 3rem; }
+    div#content table tr:nth-child(even) {
+      background: #eeeded; }
+    div#content table tr:nth-child(odd) {
+      background: #FFF; }
+    div#content table tr td, div#content table tr th {
+      padding: 5px;
+      text-align: left; }

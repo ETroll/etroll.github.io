@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://trollcode.no/blog/</loc>
+    <lastmod>2019-04-03T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/talk/</loc>
+    <lastmod>2019-06-10T17:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/about/</loc>
+    <lastmod>2019-02-11T19:41:27+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/talk/06-19-ndc-azure-on-the-cheap/</loc>
+    <lastmod>2019-06-10T17:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/</loc>
+    <lastmod>2019-06-10T17:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/talk/04-19-azure-introduction/</loc>
+    <lastmod>2019-04-25T19:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/blog/2019-04-03-going-serverless-azure/</loc>
+    <lastmod>2019-04-03T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/talk/04-18-azure-datalake-intro/</loc>
+    <lastmod>2018-04-07T19:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/talk/03-18-azure-introduction-for-java/</loc>
+    <lastmod>2018-03-07T19:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/talk/06-17-quick-osdev-intro/</loc>
+    <lastmod>2017-06-07T19:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/talk/10-17-ndc-quick-osdev-intro/</loc>
+    <lastmod>2017-06-07T19:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/tags/c/</loc>
+    <lastmod>2015-08-01T00:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/tags/cmos/</loc>
+    <lastmod>2015-08-01T00:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/blog/2015-08-01-detecting-floppy-disk/</loc>
+    <lastmod>2015-08-01T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/tags/osdev/</loc>
+    <lastmod>2015-08-01T00:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/tags/</loc>
+    <lastmod>2015-08-01T00:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trollcode.no/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
