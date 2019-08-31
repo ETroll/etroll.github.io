@@ -6,10 +6,19 @@
     <description>Recent content in Blog on Trollcode.no - A personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Apr 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="//www.trollcode.no/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Getting viewer statistics from Twitch API using Azure Functions</title>
+      <link>//www.trollcode.no/blog/2019-08-29-twitch-data-using-functions/</link>
+      <pubDate>Sat, 31 Aug 2019 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2019-08-29-twitch-data-using-functions/</guid>
+      <description>I have live-coded a few times on Twitch now. And I think it is a great platform for both learning and trying to give back to the community by streaming and putting information out there for others to learn from. On Twitch all streams have to belong to one &amp;ldquo;category&amp;rdquo;. These categories are called games on Twitch. That is no real supprise, since it is a service created to stream yourself playing games.</description>
+    </item>
     
     <item>
       <title>Going serverless with Microsoft Azure</title>

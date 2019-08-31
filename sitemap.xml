@@ -4,7 +4,7 @@
   
   <url>
     <loc>//www.trollcode.no/blog/</loc>
-    <lastmod>2019-04-03T00:00:00+01:00</lastmod>
+    <lastmod>2019-08-31T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -18,12 +18,17 @@
   </url>
   
   <url>
-    <loc>//www.trollcode.no/talk/06-19-ndc-azure-on-the-cheap/</loc>
-    <lastmod>2019-06-10T17:40:00+01:00</lastmod>
+    <loc>//www.trollcode.no/blog/2019-08-29-twitch-data-using-functions/</loc>
+    <lastmod>2019-08-31T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>//www.trollcode.no/</loc>
+    <lastmod>2019-08-31T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//www.trollcode.no/talk/06-19-ndc-azure-on-the-cheap/</loc>
     <lastmod>2019-06-10T17:40:00+01:00</lastmod>
   </url>
   

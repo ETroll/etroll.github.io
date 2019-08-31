@@ -72,6 +72,14 @@ section > article {
   margin-right: 2rem;
   margin-bottom: 2rem; }
 
+code {
+  background-color: #f0f0f0;
+  padding: .2em .4em;
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  line-height: 1; }
+
 div#content {
   margin: 1rem;
   margin-left: 2rem; }
@@ -125,6 +133,15 @@ div#content {
         border: 2px solid #376f9e; }
       div#content div.blog-factbox p {
         font-size: 0.86rem; }
+    div#content div.github a {
+      text-decoration: none; }
+      div#content div.github a p {
+        background-color: #f0f0f0;
+        padding: 1rem;
+        border-left: 5px solid #0f960f; }
+      div#content div.github a:visited, div#content div.github a:hover, div#content div.github a:active, div#content div.github a:link {
+        color: #6b5e5e;
+        text-decoration: none; }
     div#content div img, div#content div figure {
       width: 100%; }
     div#content div figure {
