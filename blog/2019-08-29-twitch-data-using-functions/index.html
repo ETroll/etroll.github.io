@@ -75,7 +75,18 @@
 
   
 
-<p>I have live-coded a few times on Twitch now. And I think it is a great platform for both learning and trying to give back to the community by streaming and putting information out there for others to learn from. On Twitch all streams have to belong to one &ldquo;category&rdquo;. These categories are called games on Twitch. That is no real supprise, since it is a service created to stream yourself playing games. To accomodate people like me, Twitch have created a &ldquo;game&rdquo; called &ldquo;Science &amp; Technology&rdquo; where us that stream ourselves coding, creating electronics, doing chemestry experiments, etc. can stream our content. It is a game that has a small but very vocal viewership.</p>
+<div class="github">
+    <a href="https://github.com/ETroll/Twitch-api-function">
+        <p >
+            
+This post has an associated public github repository. Check out the entire solution here on Github.
+
+        </p>
+    </a>
+</div>
+
+
+<p>I have live-coded a few times on Twitch now. And I think it is a great platform for both learning and trying to give back to the community by streaming and putting information out there for others to learn from. On Twitch all streams have to belong to one &ldquo;category&rdquo;. These categories are called games on Twitch. That is no real surprise, since it is a service created to stream yourself playing games. To accommodate people like me, Twitch have created a &ldquo;game&rdquo; called &ldquo;Science &amp; Technology&rdquo; where us that stream ourselves coding, creating electronics, doing chemistry experiments, etc. can stream our content. It is a game that has a small but very vocal viewership.</p>
 
 <div class="blog-factbox">
     <div>
@@ -121,7 +132,7 @@
 <li>Get the number of viewers for this game</li>
 </ol>
 
-<p>We can get the <code>game_id</code> we need to use by calling the <a href="https://dev.twitch.tv/docs/api/reference/#get-games">Get Games</a> API method. As soon as we have this <code>game_id</code> we can use this with the <a href="https://dev.twitch.tv/docs/api/reference/#get-streams">Get Streams</a> API method to get information about the streams for the Science &amp; Technology &ldquo;game&rdquo;. I could not find any single API method that would just give me the count of the viewership of a perticular game. I think this is something that should have been included in the responce in the <code>Get Games</code> API method.</p>
+<p>We can get the <code>game_id</code> we need to use by calling the <a href="https://dev.twitch.tv/docs/api/reference/#get-games">Get Games</a> API method. As soon as we have this <code>game_id</code> we can use this with the <a href="https://dev.twitch.tv/docs/api/reference/#get-streams">Get Streams</a> API method to get information about the streams for the Science &amp; Technology &ldquo;game&rdquo;. I could not find any single API method that would just give me the count of the viewership of a particular game. I think this is something that should have been included in the response in the <code>Get Games</code> API method.</p>
 
 <p>Anyhow, it looks like what we have to do to fulfill point number 2 in our list is to iterate tough all available streams for a game and sum the viewers. And since the API has very good pagination support this should not be to hard to do.</p>
 
@@ -131,7 +142,7 @@
 
 <p>So let just start with creating a new empty Azure Function. We will choose a <code>Timer trigger</code> function and use the storage emulator for local development. A <code>Timer trigger</code> function is executed at a given time interval set using <code>cron</code> like syntax. The defaults will execute our function every 5th minute.</p>
 
-<p>NOTE: Azure Functions uses the <code>NCronTab</code> library to interpret NCRONTAB expressions. An <code>NCRONTAB</code> exppression is similar to a CRON expression except that it includes an additional sixth field at the beginning to use for time precision in seconds.</p>
+<p>NOTE: Azure Functions uses the <code>NCronTab</code> library to interpret NCRONTAB expressions. An <code>NCRONTAB</code> expression is similar to a CRON expression except that it includes an additional sixth field at the beginning to use for time precision in seconds.</p>
 
 
 
@@ -141,7 +152,7 @@
     
     
     <figcaption>
-        <h4>Vistual Studio 2019 - Create a new Azure Function screen</h4>
+        <h4>Visual Studio 2019 - Create a new Azure Function screen</h4>
         
     </figcaption>
     
@@ -161,9 +172,9 @@
 </code></pre></div>
 <p>So first lets rename the function to something that suits us better. Let&rsquo;s say something like <code>TwitchViewersCollector</code> and let&rsquo;s set the trigger to trigger every hour. Then we will get data at a 1 hour granularity. I think that might be enough. Using the cron string <code>0 0 */1 * *</code> will execute the function every hour at the hour.</p>
 
-<p>Next I want to have a binding to a <code>Azure Table Storage</code> in our function. This is for storing the viewer count. I could have stored this data in a Azure SQL Server, PostgreSQL or any other relational database. But for simplicity and cost using the Azure Table Storage key-vaule store is good enough and <em>very</em> cheap.</p>
+<p>Next I want to have a binding to a <code>Azure Table Storage</code> in our function. This is for storing the viewer count. I could have stored this data in a Azure SQL Server, PostgreSQL or any other relational database. But for simplicity and cost using the Azure Table Storage key-value store is good enough and <em>very</em> cheap.</p>
 
-<p>Azure Functions support many inpout and output bindings. Previously in version 1 of Azure Functions you did not need to use a library or nuget package to make use of a binding. It was &ldquo;baked in&rdquo; the Azure Function. But now in version 2 we have to use a <code>NuGet</code> package.</p>
+<p>Azure Functions support many input and output bindings. Previously in version 1 of Azure Functions you did not need to use a library or nuget package to make use of a binding. It was &ldquo;baked in&rdquo; the Azure Function. But now in version 2 we have to use a <code>NuGet</code> package.</p>
 
 <p>So setting up a binding to a Azure Table Storage is easy enough. We just have to get the following NuGet package: <code>Microsoft.Azure.WebJobs.Extensions.Storage</code>.</p>
 
@@ -246,9 +257,9 @@ RESULT:
         <span style="color:#309;font-weight:bold">&#34;TWITCH_GAME_NAME&#34;</span>: <span style="color:#c30">&#34;Science &amp; Technology&#34;</span>
     }
 }</code></pre></div>
-<p>Note that the <code>TWITCH_CLIENT_ID</code> is empty here. That is because I do not want to give you readers my client id. ;) You can add your client id there, or use an Environment Variable with the same name when developring. When we are deploying this to Azure we will add this client id to the Azure Function using the Azure Portal. (A better way would be to use <code>Managed Identities</code> and store secrets in the <code>Azure Key Vault</code> but we will not be covering this now.)</p>
+<p>Note that the <code>TWITCH_CLIENT_ID</code> is empty here. That is because I do not want to give you readers my client id. ;) You can add your client id there, or use an Environment Variable with the same name when developing. When we are deploying this to Azure we will add this client id to the Azure Function using the Azure Portal. (A better way would be to use <code>Managed Identities</code> and store secrets in the <code>Azure Key Vault</code> but we will not be covering this now.)</p>
 
-<p>So lets call the Twitch API and see if we get a game_id back. To do this we will be using the <code>HttpClient</code> class. A bit if a caution: I have used this class inside a <code>using</code> statement. This is not the best way to use it. This class intended to be created once and re-used. But since we are writing a Azure Function here, and that function is ephemeral, I have just done the easy thing and wrapped inside a basically not needed using statement. But the follosing code will get the data from the API:</p>
+<p>So lets call the Twitch API and see if we get a game_id back. To do this we will be using the <code>HttpClient</code> class. A bit if a caution: I have used this class inside a <code>using</code> statement. This is not the best way to use it. This class intended to be created once and re-used. But since we are writing a Azure Function here, and that function is ephemeral, I have just done the easy thing and wrapped inside a basically not needed using statement. But the following code will get the data from the API:</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#069;font-weight:bold">using</span> (<span style="color:#078;font-weight:bold">var</span> client = <span style="color:#069;font-weight:bold">new</span> HttpClient())
 {
     client.DefaultRequestHeaders.Add(<span style="color:#c30">&#34;Client-ID&#34;</span>, clientId);
@@ -260,7 +271,7 @@ RESULT:
     log.LogInformation(gameContent);
 }
 </code></pre></div>
-<p>So lets just parse the data and use the returned game_id to further call <code>Get Streams</code> so we can get the real data we want. The Get Streams API call is paginated so we need to look for the pagination cursor and follow that if it is set. We then have to sum all the counts together. But that should be easy enough. We will create a loop that continues as long as there is a pagination cursor to follow or we have hit a &ldquo;breaker&rdquo; limit. (So we don&rsquo;t fall into a infinte loop.) The loop itself will use the same <code>HttpClient</code> that we used for the Get Games call. So the code will be very similar. I will not paste this code snipped alone here. But below you can se it as a part of the entire function code I have pasted.</p>
+<p>So lets just parse the data and use the returned game_id to further call <code>Get Streams</code> so we can get the real data we want. The Get Streams API call is paginated so we need to look for the pagination cursor and follow that if it is set. We then have to sum all the counts together. But that should be easy enough. We will create a loop that continues as long as there is a pagination cursor to follow or we have hit a &ldquo;breaker&rdquo; limit. (So we don&rsquo;t fall into a infinite loop.) The loop itself will use the same <code>HttpClient</code> that we used for the Get Games call. So the code will be very similar. I will not paste this code snipped alone here. But below you can se it as a part of the entire function code I have pasted.</p>
 
 <p>Now, since both our tasks that we wanted to accomplish have been solved. We now have a Azure Function that will get the number of viewers on a given &ldquo;game&rdquo; every hour for us. The following code is the entire function code we have created until now:</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#069;font-weight:bold">public</span> <span style="color:#069;font-weight:bold">static</span> <span style="color:#069;font-weight:bold">class</span> <span style="color:#0a8;font-weight:bold">TwitchViewersCollector</span>
@@ -288,7 +299,7 @@ RESULT:
                 <span style="color:#069;font-weight:bold">if</span>(!gamesHttpResult.IsSuccessStatusCode)
                 {
                     log.LogError(<span style="color:#c30">$@&#34;Twitch API call (Get Games) was not 
-</span><span style="color:#c30">                        successfull. HTTP CODE: {gamesHttpResult.StatusCode}&#34;</span>);
+</span><span style="color:#c30">                        successful. HTTP CODE: {gamesHttpResult.StatusCode}&#34;</span>);
                     <span style="color:#069;font-weight:bold">return</span>;
                 }
                 <span style="color:#069;font-weight:bold">try</span>
@@ -318,7 +329,7 @@ RESULT:
                             <span style="color:#069;font-weight:bold">if</span> (!streamsResult.IsSuccessStatusCode)
                             {
                                 log.LogError(<span style="color:#c30">$@&#34;Twitch API call (Get Streams) 
-</span><span style="color:#c30">                                    was not successfull. HTTP CODE: {streamsResult.StatusCode}&#34;</span>);
+</span><span style="color:#c30">                                    was not successful. HTTP CODE: {streamsResult.StatusCode}&#34;</span>);
                                 <span style="color:#069;font-weight:bold">return</span>;
                             }
 
@@ -427,7 +438,7 @@ RESULT:
 
 <p>So, back to deploying. Now that you have a subscription ready to deploy to. You can right click on the project in Visual Studio and choose: <code>Publish</code>. A new windows should appear. For solution the defaults should suffice, so press &ldquo;Publish&rdquo; again in the window. The defaults we just said &ldquo;yes&rdquo; to is that we will create a new Azure Function Consumption plan where we just pay for every execution of the function. We get a hefty free-tier to play around with every month on the consumption plan. So for this project the cost will be Zero for the Azure Function. We do however have to pay for the storage, but that will be a miniscule amount. For more information about the consumption plan and its pricing you can go <a href="https://azure.microsoft.com/en-us/pricing/details/functions/">here</a>.</p>
 
-<p>For the next window you can also use the defaults if you like. But if you want to choose where in the world the function should be deployed and what resource group it should use. Then this is where you choose this. We will not go into what resource groups are here in this article. Nor will we explain where to best put your function based on from where it will be used. So if this is something you do not know much about, then use the default for this deployent and we can learn about those things at a later time. :)</p>
+<p>For the next window you can also use the defaults if you like. But if you want to choose where in the world the function should be deployed and what resource group it should use. Then this is where you choose this. We will not go into what resource groups are here in this article. Nor will we explain where to best put your function based on from where it will be used. So if this is something you do not know much about, then use the default for this deployment and we can learn about those things at a later time. :)</p>
 
 
 
@@ -447,7 +458,7 @@ RESULT:
 
 <p>When you now press the &ldquo;Create&rdquo; button, Visual Studio will create the resources in your Azure subscription. So when this is complete we will have to navigate to the Azure Portal to input our two settings that we need to be in place. The <code>TWITCH_GAME_NAME</code> and the <code>TWITCH_CLIENT_ID</code> settings. So lets go the <a href="https://portal.azure.com">Azure Portal</a> now.</p>
 
-<p>Navigate to the Azure Function you just created by pressing the &ldquo;Resource Groups&rdquo; menu and choose the resoruce group we just created.</p>
+<p>Navigate to the Azure Function you just created by pressing the &ldquo;Resource Groups&rdquo; menu and choose the resource group we just created.</p>
 
 
 
@@ -503,7 +514,7 @@ RESULT:
 
 <p>The Azure Function is now ready to do its job. And we are done :)</p>
 
-<p>Since we did not use a specific connection string to the table storage we used in our function binding, Azure Functions will use the same Azure Storage Account that itself are stored in. During the deployment process a Azure Storage Account was created. And we can now go and see if there are any data in the table storage the function will create in that account. When the function was created it did not have the neccecary settings, failed. So we have to press &ldquo;Restart&rdquo; in the Azure Functions pane in the Azure Portal. This will make the function restart. And since we have the flag <code>RunOnStartup</code> set in the function, the function will execute. So we do not have to wait until next hour to see if it worked.</p>
+<p>Since we did not use a specific connection string to the table storage we used in our function binding, Azure Functions will use the same Azure Storage Account that itself are stored in. During the deployment process a Azure Storage Account was created. And we can now go and see if there are any data in the table storage the function will create in that account. When the function was created it did not have the necessary settings, failed. So we have to press &ldquo;Restart&rdquo; in the Azure Functions pane in the Azure Portal. This will make the function restart. And since we have the flag <code>RunOnStartup</code> set in the function, the function will execute. So we do not have to wait until next hour to see if it worked.</p>
 
 
 
@@ -521,20 +532,9 @@ RESULT:
 
 
 
-<p>The best way to look at the data using a UI is trough the Azure Storage Explorer. This is a application available in the Azure Portal as well as a standalone application you can <a href="https://azure.microsoft.com/en-us/features/storage-explorer/">download</a> to your PC or Mac. I reccomend to have this application installed when you are working with Azure Storage Account. It makes life a lot easier.</p>
+<p>The best way to look at the data using a UI is trough the Azure Storage Explorer. This is a application available in the Azure Portal as well as a standalone application you can <a href="https://azure.microsoft.com/en-us/features/storage-explorer/">download</a> to your PC or Mac. I recommend to have this application installed when you are working with Azure Storage Account. It makes life a lot easier.</p>
 
 <p>And using the storage explorer we can now see that it was 925 in the Science &amp; Technology &ldquo;game&rdquo; when we now tested. So it all works :) Great! Now we can collect data for some time and see if there is a time of day and day of week where there are more viewers than other times. But that result is for another article in the future.</p>
-
-<div class="github">
-    <a href="https://github.com/ETroll/Twitch-api-function">
-        <p >
-            
-    You can have a look at the entire solution here on Github.
-
-        </p>
-    </a>
-</div>
-
 
 </div>
 

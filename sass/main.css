@@ -137,7 +137,12 @@ div#content {
       text-decoration: none; }
       div#content div.github a p {
         background-color: #f0f0f0;
+        background-image: url("/icons/github.svg");
+        background-size: 76px 90%;
+        background-repeat: no-repeat;
+        background-position: left center;
         padding: 1rem;
+        padding-left: 6rem;
         border-left: 5px solid #0f960f; }
       div#content div.github a:visited, div#content div.github a:hover, div#content div.github a:active, div#content div.github a:link {
         color: #6b5e5e;

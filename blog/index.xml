@@ -6,10 +6,19 @@
     <description>Recent content in Blog on Trollcode.no - A personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 31 Aug 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="//www.trollcode.no/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python introduction workshop with cheat sheet</title>
+      <link>//www.trollcode.no/blog/2019-09-06-python-workshop/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2019-09-06-python-workshop/</guid>
+      <description>This post has an associated public github repository. Go check it out if you like!Some time ago I was asked by my employer if I could hold a introductory workshop in Python for two of our office locations. My Python knowledge is not all that, but I have recently (over the last year or so) started to like programming using the language. So I set out to create a workshop that I think could be productive very fast as long as you know the basics of programming.</description>
+    </item>
     
     <item>
       <title>Getting viewer statistics from Twitch API using Azure Functions</title>
@@ -17,7 +26,7 @@
       <pubDate>Sat, 31 Aug 2019 00:00:00 +0100</pubDate>
       
       <guid>//www.trollcode.no/blog/2019-08-29-twitch-data-using-functions/</guid>
-      <description>I have live-coded a few times on Twitch now. And I think it is a great platform for both learning and trying to give back to the community by streaming and putting information out there for others to learn from. On Twitch all streams have to belong to one &amp;ldquo;category&amp;rdquo;. These categories are called games on Twitch. That is no real supprise, since it is a service created to stream yourself playing games.</description>
+      <description>This post has an associated public github repository. Check out the entire solution here on Github.I have live-coded a few times on Twitch now. And I think it is a great platform for both learning and trying to give back to the community by streaming and putting information out there for others to learn from. On Twitch all streams have to belong to one &amp;ldquo;category&amp;rdquo;. These categories are called games on Twitch.</description>
     </item>
     
     <item>
