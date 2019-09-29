@@ -13,10 +13,10 @@
     
     <item>
       <title></title>
-      <link>//www.trollcode.no/talk/06-19-ndc-azure-on-the-cheap/</link>
+      <link>//www.trollcode.no/talk/06-19-NDC-Azure-on-the-cheap/</link>
       <pubDate>Mon, 10 Jun 2019 17:40:00 +0100</pubDate>
       
-      <guid>//www.trollcode.no/talk/06-19-ndc-azure-on-the-cheap/</guid>
+      <guid>//www.trollcode.no/talk/06-19-NDC-Azure-on-the-cheap/</guid>
       <description>Microsoft Azure is a great platform to use when creating your next minimal viable product (MVP).
 But some services are more expensive than others. And in this talk I will show that instead of going straight to the more expensive options for your MVP, there are many cheap options available on the Azure platform. Some services even have a free-tier.
 Using Azure Storage Accounts for your data storage needs, Azure Functions or Azure Container Instances for your API and computing needs can make for a very cheap and low maintenance MVP.</description>
@@ -24,48 +24,48 @@ Using Azure Storage Accounts for your data storage needs, Azure Functions or Azu
     
     <item>
       <title></title>
-      <link>//www.trollcode.no/talk/04-19-azure-introduction/</link>
+      <link>//www.trollcode.no/talk/04-19-Azure-Introduction/</link>
       <pubDate>Thu, 25 Apr 2019 19:00:00 +0100</pubDate>
       
-      <guid>//www.trollcode.no/talk/04-19-azure-introduction/</guid>
+      <guid>//www.trollcode.no/talk/04-19-Azure-Introduction/</guid>
       <description>Microsoft Azure has in short time become one of the three largest cloud providers. In this talk we will have a look at what Microsoft Azure is and what it can it can offer to you as a developer. A description of some of the most used services that are offered, as well as a introduction to those services will be given. Some services works better in some situations than others, and my personal experience from misc.</description>
     </item>
     
     <item>
       <title></title>
-      <link>//www.trollcode.no/talk/04-18-azure-datalake-intro/</link>
+      <link>//www.trollcode.no/talk/04-18-Azure-Datalake-Intro/</link>
       <pubDate>Sat, 07 Apr 2018 19:00:00 +0100</pubDate>
       
-      <guid>//www.trollcode.no/talk/04-18-azure-datalake-intro/</guid>
+      <guid>//www.trollcode.no/talk/04-18-Azure-Datalake-Intro/</guid>
       <description>In Norwegian:
 Presentasjon gitt til Webstep Sørlandet som tar for seg Azure Datalake en introduksjon til dette. Den går inn på temaer som Azure Datalake Storage, Azure Datalake Analytics, U-SQL, Azure Data Factory og tips &amp;amp; triks som jeg har lært den tiden jeg har drevet på med dette emnet.</description>
     </item>
     
     <item>
       <title></title>
-      <link>//www.trollcode.no/talk/03-18-azure-introduction-for-java/</link>
+      <link>//www.trollcode.no/talk/03-18-Azure-Introduction-For-Java/</link>
       <pubDate>Wed, 07 Mar 2018 19:00:00 +0100</pubDate>
       
-      <guid>//www.trollcode.no/talk/03-18-azure-introduction-for-java/</guid>
+      <guid>//www.trollcode.no/talk/03-18-Azure-Introduction-For-Java/</guid>
       <description>In Norwegian:
 Microsoft har også en skyløsning, og den har på kort tid blitt en av de største, om ikke størst. Microsoft Azure tilbyr mye av de samme mulighetene som Amazon AWS, og støtter både Java, C# og flere andre programmeringsspråk. Karl Syvert Løland fra NorgesEnergi vil fortelle mer om Azure og de ulike modellene Microsoft tilbyr for utvikling, deriblant Service Fabric og Functions.</description>
     </item>
     
     <item>
       <title></title>
-      <link>//www.trollcode.no/talk/06-17-quick-osdev-intro/</link>
+      <link>//www.trollcode.no/talk/06-17-Quick-Osdev-Intro/</link>
       <pubDate>Wed, 07 Jun 2017 19:00:00 +0100</pubDate>
       
-      <guid>//www.trollcode.no/talk/06-17-quick-osdev-intro/</guid>
+      <guid>//www.trollcode.no/talk/06-17-Quick-Osdev-Intro/</guid>
       <description>Karl Syvert Løland from NorgesEnergi will tells us the why&amp;rsquo;s and how&amp;rsquo;s about developing his very own operating system.</description>
     </item>
     
     <item>
       <title></title>
-      <link>//www.trollcode.no/talk/10-17-ndc-quick-osdev-intro/</link>
+      <link>//www.trollcode.no/talk/10-17-NDC-Quick-Osdev-Intro/</link>
       <pubDate>Wed, 07 Jun 2017 19:00:00 +0100</pubDate>
       
-      <guid>//www.trollcode.no/talk/10-17-ndc-quick-osdev-intro/</guid>
+      <guid>//www.trollcode.no/talk/10-17-NDC-Quick-Osdev-Intro/</guid>
       <description>This lightning talk will give an introduction to operating system development and how to get started. It is easier than one might think and can be a very fun and rewarding experience.
 There exists many myths that OS dev is hard. My goal is to show that OS dev is easy to learn but difficult to master. The talk will be low on technical terms and take a more from the top view on how to get started.</description>
     </item>
