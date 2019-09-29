@@ -6,10 +6,20 @@
     <description>Recent content in Hi there! on Trollcode.no - A personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="//www.trollcode.no/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo and VS Code Dev Containers</title>
+      <link>//www.trollcode.no/blog/2019-09-19-hugo-dev-container/</link>
+      <pubDate>Thu, 19 Sep 2019 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2019-09-19-hugo-dev-container/</guid>
+      <description>Last month I revamped my old blog. I figured I wanted to write more blog articles and needed a easy platform to do so. I had previously been using Jekyll and had been quite happy. But after a look at Hugo I wanted to give that a try. Really just for the &amp;ldquo;kicks of it&amp;rdquo;.
+Both are static website generators. But Hugo offers some more bells and whistles that I wanted to make use of like Shortcodes and easy templating.</description>
+    </item>
     
     <item>
       <title>Python introduction workshop with cheat sheet</title>

@@ -73,7 +73,7 @@ section > article {
   margin-bottom: 2rem; }
 
 code {
-  background-color: #f0f0f0;
+  background-color: #f0f3f3;
   padding: .2em .4em;
   border-radius: 3px;
   font-size: 85%;
@@ -86,15 +86,19 @@ div#content {
   div#content p {
     max-width: 800px; }
     div#content p.oldpost {
-      background-color: #f0f0f0;
+      background-color: #f0f3f3;
       padding: 1rem;
       border-left: 5px solid #376f9e; }
     div#content p.prevposted {
-      background-color: #f0f0f0;
+      background-color: #f0f3f3;
       padding: 1rem;
       border-left: 5px solid orange; }
+    div#content p.disclaimer {
+      background-color: #f0f3f3;
+      padding: 1rem;
+      border-left: 5px solid #777777; }
   div#content blockquote {
-    background-color: #f0f0f0;
+    background-color: #f0f3f3;
     padding: 1rem;
     text-align: center;
     position: relative; }
@@ -136,7 +140,7 @@ div#content {
     div#content div.github a {
       text-decoration: none; }
       div#content div.github a p {
-        background-color: #f0f0f0;
+        background-color: #f0f3f3;
         background-image: url("/icons/github.svg");
         background-size: 76px 90%;
         background-repeat: no-repeat;

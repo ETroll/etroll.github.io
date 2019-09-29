@@ -4,12 +4,16 @@
   
   <url>
     <loc>//www.trollcode.no/blog/</loc>
-    <lastmod>2019-09-06T00:00:00+01:00</lastmod>
+    <lastmod>2019-09-19T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>//www.trollcode.no/talk/</loc>
     <lastmod>2019-06-10T17:40:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//www.trollcode.no/stream/</loc>
   </url>
   
   <url>
@@ -19,7 +23,12 @@
   
   <url>
     <loc>//www.trollcode.no/</loc>
-    <lastmod>2019-09-06T00:00:00+01:00</lastmod>
+    <lastmod>2019-09-19T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>//www.trollcode.no/blog/2019-09-19-hugo-dev-container/</loc>
+    <lastmod>2019-09-19T00:00:00+01:00</lastmod>
   </url>
   
   <url>
