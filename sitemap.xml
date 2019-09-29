@@ -27,12 +27,12 @@
   </url>
   
   <url>
-    <loc>//www.trollcode.no/blog/2019-09-19-Hugo-Dev-Container/</loc>
+    <loc>//www.trollcode.no/blog/2019-09-19-hugo-dev-container/</loc>
     <lastmod>2019-09-19T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>//www.trollcode.no/blog/2019-09-06-Python-Workshop/</loc>
+    <loc>//www.trollcode.no/blog/2019-09-06-python-workshop/</loc>
     <lastmod>2019-09-06T00:00:00+01:00</lastmod>
   </url>
   
@@ -42,12 +42,12 @@
   </url>
   
   <url>
-    <loc>//www.trollcode.no/talk/06-19-NDC-Azure-on-the-cheap/</loc>
+    <loc>//www.trollcode.no/talk/06-19-ndc-azure-on-the-cheap/</loc>
     <lastmod>2019-06-10T17:40:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>//www.trollcode.no/talk/04-19-Azure-Introduction/</loc>
+    <loc>//www.trollcode.no/talk/04-19-azure-introduction/</loc>
     <lastmod>2019-04-25T19:00:00+01:00</lastmod>
   </url>
   
@@ -57,33 +57,33 @@
   </url>
   
   <url>
-    <loc>//www.trollcode.no/talk/04-18-Azure-Datalake-Intro/</loc>
+    <loc>//www.trollcode.no/talk/04-18-azure-datalake-intro/</loc>
     <lastmod>2018-04-07T19:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>//www.trollcode.no/talk/03-18-Azure-Introduction-For-Java/</loc>
+    <loc>//www.trollcode.no/talk/03-18-azure-introduction-for-java/</loc>
     <lastmod>2018-03-07T19:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>//www.trollcode.no/talk/06-17-Quick-Osdev-Intro/</loc>
+    <loc>//www.trollcode.no/talk/06-17-quick-osdev-intro/</loc>
     <lastmod>2017-06-07T19:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>//www.trollcode.no/talk/10-17-NDC-Quick-Osdev-Intro/</loc>
+    <loc>//www.trollcode.no/talk/10-17-ndc-quick-osdev-intro/</loc>
     <lastmod>2017-06-07T19:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>//www.trollcode.no/tags/C/</loc>
+    <loc>//www.trollcode.no/tags/c/</loc>
     <lastmod>2015-08-01T00:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//www.trollcode.no/tags/CMOS/</loc>
+    <loc>//www.trollcode.no/tags/cmos/</loc>
     <lastmod>2015-08-01T00:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -94,7 +94,7 @@
   </url>
   
   <url>
-    <loc>//www.trollcode.no/tags/OSDEV/</loc>
+    <loc>//www.trollcode.no/tags/osdev/</loc>
     <lastmod>2015-08-01T00:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
