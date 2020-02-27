@@ -2,21 +2,23 @@ menu {
   width: 100%;
   min-height: 80px;
   background-color: #376f9e;
-  background-image: url("/img/Profile.png");
-  background-size: 76px 90%;
-  background-repeat: no-repeat;
-  background-position: left center; }
-  menu > img {
-    max-height: 70px;
-    padding: 5px; }
+  margin: 0;
+  padding: 0; }
   menu ul {
     min-height: 80px;
     display: flex;
     justify-content: flex-start;
-    align-items: stretch; }
+    align-items: stretch;
+    margin: 0;
+    padding: 0; }
     menu ul > li {
       display: flex;
       align-items: center; }
+      menu ul > li > img {
+        max-height: 70px;
+        padding: 5px; }
+        menu ul > li > img:hover {
+          background-color: #376f9e; }
       menu ul > li > a {
         padding: 1rem; }
         menu ul > li > a:visited, menu ul > li > a:hover, menu ul > li > a:active, menu ul > li > a:link {
@@ -88,35 +90,42 @@ div#content {
     div#content p.oldpost {
       background-color: #f0f3f3;
       padding: 1rem;
-      border-left: 5px solid #376f9e; }
+      border-left: 5px solid #376f9e;
+      font-size: small; }
     div#content p.prevposted {
       background-color: #f0f3f3;
       padding: 1rem;
-      border-left: 5px solid orange; }
-    div#content p.disclaimer {
+      border-left: 5px solid orange;
+      font-size: small; }
+    div#content p.quote {
       background-color: #f0f3f3;
       padding: 1rem;
-      border-left: 5px solid #777777; }
+      border-left: 5px solid #777777;
+      font-size: small; }
   div#content blockquote {
-    background-color: #f0f3f3;
-    padding: 1rem;
-    text-align: center;
-    position: relative; }
+    margin: 0; }
     div#content blockquote p {
-      display: inline; }
-      div#content blockquote p:before {
-        position: absolute;
-        content: open-quote;
-        font-size: 4em;
-        margin-left: -0.3em;
-        margin-top: -0.2em; }
-      div#content blockquote p:after {
-        position: absolute;
-        content: close-quote;
-        font-size: 4em;
-        bottom: 0;
-        right: 0;
-        margin-bottom: -0.6em; }
+      background-color: #f0f3f3;
+      padding: 1.5rem;
+      border-left: 5px solid #376f9e;
+      font-size: small; }
+      div#content blockquote p a:last-child {
+        margin-top: 1rem;
+        text-align: right; }
+        div#content blockquote p a:last-child::before {
+          content: "\A\A";
+          white-space: pre;
+          text-decoration: none; }
+    div#content blockquote blockquote p {
+      margin: 0;
+      text-align: center;
+      background-color: transparent;
+      border: none;
+      font-size: 3rem; }
+      div#content blockquote blockquote p::before {
+        content: "\""; }
+      div#content blockquote blockquote p::after {
+        content: "\""; }
   div#content div {
     max-width: 800px; }
     div#content div.blog-factbox {
@@ -136,9 +145,10 @@ div#content {
         padding: 0.4rem;
         border: 2px solid #376f9e; }
       div#content div.blog-factbox p {
-        font-size: 0.86rem; }
+        font-size: 0.75rem; }
     div#content div.github a {
-      text-decoration: none; }
+      text-decoration: none;
+      font-size: small; }
       div#content div.github a p {
         background-color: #f0f3f3;
         background-image: url("/icons/github.svg");
@@ -202,3 +212,5 @@ div#content {
     div#content table tr td, div#content table tr th {
       padding: 5px;
       text-align: left; }
+      div#content table tr td[align="center"], div#content table tr th[align="center"] {
+        text-align: center; }

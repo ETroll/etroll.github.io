@@ -6,10 +6,60 @@
     <description>Recent content in Blog on Trollcode.no - A personal blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Sep 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 17 Feb 2020 00:00:00 +0100</lastBuildDate>
     
 	<atom:link href="//www.trollcode.no/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>AZ-301 to AZ-304 Exam Changes</title>
+      <link>//www.trollcode.no/blog/2020-02-17-az-304-changes/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2020-02-17-az-304-changes/</guid>
+      <description>Fourth one out in this little series about the 2020 Azure certification exam changes is the new AZ-304 exam that will be replacing the old AZ-301 exam.
+The new Skills Measured document that currently are under development can be read at Microsoft&amp;rsquo;s Certification pages. A link to that document can be found here: Exam AZ-304: Microsoft Azure Architect Design - Skills Measured
+This new exam has one less section than the old AZ-301.</description>
+    </item>
+    
+    <item>
+      <title>AZ-300 to AZ-303 Exam Changes</title>
+      <link>//www.trollcode.no/blog/2020-02-16-az-303-changes/</link>
+      <pubDate>Sun, 16 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2020-02-16-az-303-changes/</guid>
+      <description>Third one out in this little series about the 2020 Azure certification exam changes is the new AZ-303 exam that will be replacing the old AZ-300 exam.
+The new Skills Measured document that currently are under development can be read at Microsoft&amp;rsquo;s Certification pages. A link to that document can be found here: Exam AZ-303: Microsoft Azure Architect Technologies - Skills Measured
+Right of the bat there is one change that I would have expected, but that did not happen.</description>
+    </item>
+    
+    <item>
+      <title>AZ-203 to AZ-204 Exam Changes</title>
+      <link>//www.trollcode.no/blog/2020-02-15-az-204-changes/</link>
+      <pubDate>Sat, 15 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2020-02-15-az-204-changes/</guid>
+      <description>Second out in this little series of the 2020 Azure certification exam changes is the new AZ-204 exam that will be replacing the old AZ-203 exam.
+When I was reading trough the new AZ-204 Skills Measured I quickly noticed that this new exam has a lot of changes from the old AZ-203 exam. There are however some strange changes in my opinion: requirement for Azure SQL and Azure Table Storage knowledge has been removed.</description>
+    </item>
+    
+    <item>
+      <title>AZ-103 to AZ-104 Exam Changes</title>
+      <link>//www.trollcode.no/blog/2020-02-14-az-104-changes/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2020-02-14-az-104-changes/</guid>
+      <description>First out in this little series of the 2020 Azure certification exam changes is the new AZ-104 exam that will be replacing the old AZ-103 exam. First of the bat when I skimmed trough the new Skills Measured document I could see that there are some large changes from the AZ-103 exam. It is not a total revamp, but there are some changes to important areas like Monitoring and Networking.</description>
+    </item>
+    
+    <item>
+      <title>2020 Azure Certification Changes</title>
+      <link>//www.trollcode.no/blog/2020-02-02-azure-certification-changes/</link>
+      <pubDate>Sun, 02 Feb 2020 00:00:00 +0100</pubDate>
+      
+      <guid>//www.trollcode.no/blog/2020-02-02-azure-certification-changes/</guid>
+      <description>On the 24th of January 2020 Microsoft announced changes to some of the more known Azure certification exams. The announcement was given with this blog post: Updates to Several Azure and Data &amp;amp; AI Certifications are Coming Soon As many might already know, the norm for Microsoft is to revise the the exams every 2 months and have a look at the syllabus once a year. This revision of the syllabus warranted a change in the exam numbers for some exams.</description>
+    </item>
     
     <item>
       <title>Hugo and VS Code Dev Containers</title>
